@@ -7,15 +7,20 @@
 # enemy_final_hp = enemy_hp - my_power
 # 谁的hp先为0，那么谁就输了
 def game():
+    # 定义需要的变量
     my_hp=1000
     my_power=200
     enemy_hp=1500
     enemy_power=300
+    #while循环判断
     while True:
+        #血量循环递减
         my_hp=my_hp-enemy_power
         enemy_hp=enemy_hp-my_power
+        #判断血量小于0
         if my_hp <= 0:
-            print("我输了,能量值",my_hp )
+            print("我输了,血量值",my_hp )
+            #跳出循环
             break
         elif enemy_hp <= 0:
             print("我赢了")
