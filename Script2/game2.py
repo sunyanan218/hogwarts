@@ -8,7 +8,7 @@ def game():
     while True:
         tonglao.hp = tonglao.hp - xuzhu.power
         xuzhu.hp = xuzhu.hp - tonglao.power
-        print(f"虚竹的剩余能量{xuzhu.hp}，童姥的剩余能量{tonglao.hp}")
+        #print(f"虚竹的剩余能量{xuzhu.hp}，童姥的剩余能量{tonglao.hp}")
         if tonglao.hp <= 0:
             print(f"虚竹赢了,虚竹的剩余能量{xuzhu.hp}，童姥的剩余能量{tonglao.hp}")
             break
