@@ -1,5 +1,6 @@
 import pytest
-@pytest.fixture(scope='class')
+
+@pytest.fixture(scope="session")
 def state():
     print('开始执行用例')
     yield
